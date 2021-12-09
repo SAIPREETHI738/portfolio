@@ -4,6 +4,7 @@
 }
 body{
     background-color: #F8F9F9 ;
+    
 }
 .box{
     background-image: url(./image.png);
@@ -15,15 +16,19 @@ body{
 .header{
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color:rgb(241, 222, 225);
     color: navy;
     font-family: Arial, Helvetica, sans-serif;
    justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
-   position: fixed;
-   z-index: 1;
+    position: fixed;
+    z-index: 1;
+    
+}
+.nav{
+    margin-left: 500px;
 }
 .home{
     text-decoration: none;
@@ -32,14 +37,16 @@ body{
 }
 .home:hover{
     background-color: white;
+    color: red;
    
 }
 
 ul{
     list-style-type: none;
     display: flex;
-   
+    font-size: 20px;
 }
+
 .text1{
    left: 10%;
    top: 20%;
@@ -163,6 +170,7 @@ ul{
     width: 50px;
     height: 50px;
     background-size: contain;
+    background-repeat: no-repeat;
     margin-top: 50px;
 }
 .css{
@@ -171,6 +179,7 @@ ul{
         width: 60px;
         height: 60px;
         background-size: contain;
+        background-repeat: no-repeat;
         margin-top: 48px;
         margin-left: 10px;
     
@@ -181,6 +190,7 @@ ul{
     width: 50px;
     height: 50px;
     background-size: contain;
+    background-repeat: no-repeat;
     margin-top: 50px;
     margin-left: 10px;
 
@@ -191,6 +201,7 @@ ul{
     width: 50px;
     height: 50px;
     background-size: contain;
+    background-repeat: no-repeat;
     margin-top: 50px;
     margin-left: 10px;
 
@@ -198,11 +209,12 @@ ul{
 .rn{
     
     background-image: url(./ReactNative.jpg);
-    width: 100px;
+    width: 80px;
     height: 60px;
     background-size: cover;
-    margin-top: 40px;
-    margin-left: 5px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    
 
 }
 .gh{
@@ -211,6 +223,7 @@ ul{
     width: 40px;
     height: 40px;
     background-size: cover;
+    background-repeat: no-repeat;
     margin-top: 50px;
 }
 .portcontainer{
@@ -304,6 +317,7 @@ ul{
     width: 70%;
     margin-left: 200px;
     color:seagreen;
+    border: 2px solid black;
 }
 .in{
     
@@ -336,33 +350,27 @@ ul{
    
     display: flex;
 }
-.box2{
-    width: 350px;
-    height: 350px;
-    margin-left: 120px;
-    margin-top: 100px;
-    box-shadow: 10PX 10PX 10px rgb(240, 237, 237,0.4),-10px -10px 10px rgb(240, 237, 237,0.4);
-    border-radius: 10px;
-}
-.box3{
-    width: 350px;
-    height: 90px;
-    margin-left: 670px;
-    margin-top: 50px;
-    box-shadow: 10PX 10PX 10px rgb(240, 237, 237,0.4),-10px -10px 10px rgb(240, 237, 237,0.4);
-    border-radius: 10px;
-    
-}
+
 .R{
     width: 350px;
     height: 350px;
     border-radius: 10px;
+    margin-left: 120px;
+    margin-top: 100px;
+    box-shadow: 10PX 10PX 10px rgb(240, 237, 237,0.4),-10px -10px 10px rgb(240, 237, 237,0.4);
 }
 .icons{
+    width: 350px;
+    height: 90px;
     margin-left: 30px;
     padding: 10px;
     color: black;
     word-spacing: 20px;
+    margin-left: 670px;
+    margin-top: 50px;
+    box-shadow: 10PX 10PX 10px rgb(240, 237, 237,0.4),-10px -10px 10px rgb(240, 237, 237,0.4);
+    border-radius: 10px;
+    background-color: white;
 
 }
 .people{
@@ -550,42 +558,39 @@ ul{
    margin-top: 100px;
     padding: 30px;
 }
-@media only screen and (max-width: 400px){
-    .container{
-        width: 250vh;
-    }
-   .header{
-        width: 250vh;
+@media only screen and (max-width: 500px){
+    
+    .header{
+        width: 400%;
         height: 200px;
         position: static;
-        font-size: 60px;
+        font-size: 50px;
         padding: 10px;
-      
-}
-    .home{
+        
+    }
+   .home{
       display: none;
       
      }
      .box{
-        background-image: url(./image.png);
-        width: 250vh;
+        width: 400%;
         height: 250vh;
        
     }
      .text1{
-        left: 7%;
+        left: 10%;
         top: 10%;
         position: relative;
         font-size: 50px;
      }
      .text2{
-         left: 7%;
+         left: 10%;
          top: 15%;
          position: relative;
          font-size: 40px; 
       }
       .text3{
-         left: 7%;
+         left: 10%;
          top: 20%;
          position: relative;
          font-size: 50px;
@@ -593,24 +598,28 @@ ul{
       .button{
         font-size: 60px;
         padding: 40px;
-        left: 20%;
+        left: 10%;
         position: relative;
         border-radius: 30px;
         }
      .button1{
         font-size: 60px;
         padding: 40px;
-        left: 30%;
+        left: 20%;
         position: relative;
         border-radius: 30px;
     }
+    
     .container1{
-        height: 500vh;
-        width: 250vh;
+        height: 600vh;
+        width: 400%;
         border-radius: 0px;
-        margin-left: 0px;
+        margin-left: -10px;
         
     }
+     .portcontainer{
+         display: none;
+     }
     .about{
         font-size: 50px;
         margin-left: 150px;
@@ -624,17 +633,14 @@ ul{
         margin-left: 30px;
        
     }
-    h1{
-        margin-left: 200px;
-    }
+    
     .boxes{
         display:inline-block;
         
     }
     .char{
-        width: 250vh;
+        width: 100%;
         height: 180vh;
-        
     }
     .inside{
         font-size: 60px;
@@ -648,13 +654,13 @@ ul{
     .me{
         padding: 50px;
         line-height: 80px;
-        margin-left: 150px;
-        width: 150vh;
+        margin-left: 80px;
+        width: 100vh;
     }
     .lan{
         width: 70%;
-        height: 500px;
-        margin-left: 200px;
+        height: 400px;
+        margin-left: 120px;
         top: 2%;
         position: relative;
         border-radius: 20px;
@@ -691,7 +697,7 @@ ul{
 
     }
     .rn{
-        width: 200px;
+        width: 250px;
         height: 200px;
     }
     .gh{
@@ -709,48 +715,40 @@ ul{
     .port:after { 
         width: 400px;
         border-bottom: 20px solid orange;
-        margin-left: 580px;
+        margin-left: 750px;
     }
     .resume{
-        width: 250vh;
-        height: 1000vh;
-        margin-left: 0px;
+        width: 400%;
+        height: 900vh;
+        margin-left: -10px;
         margin-top: 100px;
-    }
-    .main{
-        display: inline-block;
-        
-    }
-    .box2{
-        margin-left: 0px;
-        margin-top: 0px;
-    }
-    .in{
-       
-       position: absolute;
-       
+        background-color: peachpuff;
     }
     .R{
-        width: 250vh;
-        height: 250vh;
+       
+       left: 90%;
+        position: absolute;
+        width: 100vh;
+        height: 100vh;
     }
-    .box3{
-        width: 250vh;
-        height: 300px;
-        margin-left: 0px;
-        border-radius: 0px;
-        
+   
+    .in{
+      position: relative;
+       
     }
-    .icons{
-        margin-top: 20px;
+     .icons{
+        margin-top: 700px;
         padding: 50px;
         color: black;
         word-spacing: 80px;
         font-size: 60px;
         background-color: white;
+        width: 150vh;
+        height: 30vh;
+        margin-left: 180px;
     }
     .content{
-        top: 650%;
+        top: 500%;
         position: relative;
         margin-left: 150px;
         line-height: 150px;
@@ -771,6 +769,9 @@ ul{
     .people{
        padding: 20px;
         font-size: 50px;
+        display: inline-block;
+        margin-left: 200px;
+        
     }
     h1{
         margin-left: 10px;
@@ -778,10 +779,10 @@ ul{
     .people:after { 
         content:"";
         display:block;
-        width: 170vh;
+        width: 130vh;
         border-bottom: 20px solid orange;
         padding: 20px;
-        margin-left: 250px;
+        margin-left: 200px;
      }
     h2{
         margin-top: 100px;
@@ -789,11 +790,11 @@ ul{
     }
     .container3{
         
-        width: 250vh;
+        width: 400%;
         height: 250vh;
         border-radius: 0px;
         margin-top: 50px;
-        margin-left: 0px;
+        margin-left: -10px;
         background-color: white;
         
     }
@@ -828,6 +829,7 @@ ul{
     }
     .view{
         height: 200px;
+        width: auto;
         font-size: 70px;
         
     }
@@ -836,33 +838,36 @@ ul{
         padding: 10px;
         color: seagreen;
         margin-top: 500px;
+        margin-left: 500px;
         font-size: 50px;
+        display: inline-block;
     
     }
     .cell:after { 
         content:"";
         display:block;
         width: 500px;
-        margin-left: 550px;
+        margin-left: 100px;
         border-bottom: 20px solid orange;
         padding: 5px;
     }
     .container4{
         display: inline-block;
-        width: 250vh;
+        width: 400%;
         height: 500vh;
-        margin-left: 0px;
+        margin-left: -10px;
         margin-top: 100px;
     }
     .connect{
         position: relative;
-        width: 250vh;
+        width: auto;
         height: 200vh;
         font-size: 50px;
         line-height: 50px;
     }
     .connect2{
         position: relative;
+        width: auto;
     }
     .sed{
         font-size: 60px;
@@ -870,16 +875,17 @@ ul{
     }
     .msg{
         font-size: 50px;
+        
     }
     .label{
         font-size: 60px;
     }
     .input{
-        width: 180vh;
+        width: 100vh;
         height: 20vh;
     }
     .input1{
-        width: 180vh;
+        width: 100vh;
         height: 40vh;
         font-size: 50px;
   }
@@ -889,9 +895,9 @@ ul{
       height: 100px;
 }
 .footer{
-    width: 250vh;
+    width: 400%;
     height: 30vh;
-    font-size: 70px;
+    font-size: 50px;
     margin-top: 200px;
   }
 }
